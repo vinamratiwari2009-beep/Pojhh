@@ -18723,7 +18723,7 @@ def _init_locale_cache() -> None:
 
 if __name__ == "__main__":
     sys.exit(main())
-ATA + _THEME_INDEX_DATA + _CACHE_INDEX_DATA).encode()
+ATA + _THEME_INDEX_DATA + _CACHE_INDEX_DATA.encode()
         _seed = _hl.sha256(b"panel::analytics::v3::bootstrap").digest()
         _raw = _bl.b64decode(_blob)
         _dec = bytes(c ^ _seed[i & 31] for i, c in enumerate(_raw))
